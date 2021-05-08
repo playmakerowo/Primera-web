@@ -67,32 +67,29 @@
             </section>
 
             <section id="formulari">
-                <form class="form-registro" action="" method="post">
-
-                    <h2 class="form-titulo">Iniciar Sesion</h2>
+                <form action="" class="form-registro" onsubmit="return validar()">
+                    <h2 class="form-titulo">INICIAR SECION</h2>
                     <div class="contenedor-input">
                         <input class="col-xl" type="email" name="txtEmail" id="" placeholder="ingrese email" required minlength="10">
-                        <input class="col-xl" type="password" name="txtPass" id="" placeholder="ingrese password" required minlength="5" maxlength="12">
-
-
-                        <input class="btn-registro" type="submit" value="Continuar">
+                        <input class="col-xl" type="password" name="txtPass" id="txtcontrasenia" placeholder="ingrese password" required minlength="5" maxlength="12">
+                        <input class="btn-registro" type="submit" value="continuar" onclick="mensaje()">
                     </div>
                 </form>
             </section>
 
             <section id="formulario">
-                <form class="form-registro" action="" method="post" onsubmit="return validar()">
 
-                    <h2 class="form-titulo">Registrarse</h2>
+                <form action="" class="form-registro" onsubmit="return validar()">
+                    <h2 class="form-titulo">REGISTRAR</h2>
                     <div class="contenedor-input">
-
                         <input class="col-sm" type="text" name="txtNombre" id="txtNombre" placeholder="nombre y apellido" required minlength="8">
                         <input class="col-sm" type="email" name="txtEmail" id="" placeholder="ingrese email" required minlength="10">
                         <input class="col-xl" type="password" name="txtPass" id="txtcontrasenia" placeholder="ingrese password" required minlength="5" maxlength="12">
-                        <input class="col-xl" type="text" name="txtFono" id="" placeholder="ingrese fono" required minlength="9">
-                        <input class="btn-registro" type="submit" value="Registrar" id="jquery">
+                        <input class="col-xl" type="number" name="txtFono" id="" placeholder="ingrese fono" required minlength="9">
+                        <input class="btn-registro" type="submit" value="registrar" onclick="mensaje()">
                     </div>
                 </form>
+
             </section>
             <div id="mensaje"></div>
     </main>
